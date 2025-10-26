@@ -45,7 +45,7 @@ Then open http://localhost:5173  🚀
 
 🌐 Live Demo
 
-👉 View on Netlify
+👉 https://aasmy-shop.netlify.app/
 
 
 💡 Future Improvements
