@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+🛍️ Shoppingly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple. Fast.
 
-Currently, two official plugins are available:
+A modern shopping list app built with React + Vite, Redux Toolkit, Formik, and Yup — focusing on clean design, smooth UX, and scalability.
+You can add products with quantity, description, and images — all in a soft pastel interface with optional dark mode.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## React Compiler
+🧺 Add, list, and remove products
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🖼️ Upload or change product image
 
-## Expanding the ESLint configuration
+✍️ Product description support
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🌗 Dark mode switch
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+💾 Mock data for local testing (API-ready architecture)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+📱 Fully responsive pastel design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Category	          Tools
+Frontend	          React + Vite
+State Management	  Redux Toolkit
+Forms & Validation	Formik + Yup
+Styling	CSS
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+⚙️ Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Clone the repo
+git clone https://github.com/adilahmetsargin/shoppingly.git
+cd shoppingly
+
+# Install dependencies
+npm install
+
+# Run locally
+npm run dev
+
+Then open http://localhost:5173  🚀
+
+
+🌐 Live Demo
+
+👉 View on Netlify
+
+🧩 Project Structure
+
+src/
+ ├── components/
+ │    ├── Header.tsx
+ │    ├── ProductForm.tsx
+ │    └── ProductCard.tsx
+ ├── features/
+ │    └── products/
+ │         ├── productsSlice.ts
+ │         └── mockData.ts
+ ├── pages/
+ │    ├── Home.tsx
+ │    └── ProductDetail.tsx
+ ├── App.tsx
+ ├── main.tsx
+ └── index.css
+
+
+💡 Future Improvements
+
+User authentication
+
+Favorites & categories
+
+Real API connection
+
+Search and filter
+
+Progressive Web App (PWA) support
+
+🧑‍💻 Author
+
+Adil Ahmet Sargin
+Frontend Developer | React & TypeScript
+📍 Rochester Hills, MI
+🌐 LinkedIn: https://www.linkedin.com/in/adilahmetsargin/
+   GitHub:   https://github.com/adilahmetsargin/
+
+"A clean interface inspires clean thinking." ✨
