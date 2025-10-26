@@ -31,6 +31,7 @@ Styling	CSS
 
 # Clone the repo
 git clone https://github.com/adilahmetsargin/shoppingly.git
+
 cd shoppingly
 
 # Install dependencies
@@ -45,24 +46,6 @@ Then open http://localhost:5173  🚀
 🌐 Live Demo
 
 👉 View on Netlify
-
-🧩 Project Structure
-
-src/
- ├── components/
- │    ├── Header.tsx
- │    ├── ProductForm.tsx
- │    └── ProductCard.tsx
- ├── features/
- │    └── products/
- │         ├── productsSlice.ts
- │         └── mockData.ts
- ├── pages/
- │    ├── Home.tsx
- │    └── ProductDetail.tsx
- ├── App.tsx
- ├── main.tsx
- └── index.css
 
 
 💡 Future Improvements
